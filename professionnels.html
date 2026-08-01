@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espace professionnels — Tu testes pas, tu sais pas</title>
+<meta name="description" content="Rentabilise tes heures creuses : inscris-toi, propose tes ateliers et gagne un revenu complémentaire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="container">
+    <a href="index.html" class="logo">tu testes pas, <span>tu sais pas</span></a>
+    <nav class="main">
+      <a href="particuliers.html" class="link-plain">Trouver un cours</a>
+      <a href="professionnels.html" class="pill-outline">Je suis un pro</a>
+      <a href="#inscription" class="pill-solid">M'inscrire</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="badge">Espace professionnels</span>
+    <h1 class="logo-big" style="font-size:clamp(2rem,5vw,3.2rem)">Rentabilise tes <span class="accent">heures creuses</span></h1>
+    <p class="lede">
+      Cuisinier, fleuriste, artisan, coach, sommelier, formateur... Tu as des créneaux libres dans ton planning ?
+      Transforme-les en revenu complémentaire en proposant des ateliers à des particuliers curieux.
+      On s'occupe de la communication, de la réservation, du paiement et de l'organisation.
+    </p>
+    <div class="cta-row">
+      <a href="#inscription" class="btn btn-primary">Je m'inscris</a>
+      <a href="#commission" class="btn btn-outline">Voir la commission</a>
+    </div>
+  </div>
+</section>
+
+<section id="commission">
+  <div class="container">
+    <h2 class="section-title">Ce que tu gardes, ce qu'on apporte</h2>
+    <p class="section-sub">Une seule commission, tout le reste est inclus.</p>
+    <div class="commission-box">
+      <div>
+        <div class="big-num">20%</div>
+        <p style="margin-top:6px;opacity:.9">C'est notre commission sur le prix de chaque cours vendu. Tu gardes 80% du prix que tu as fixé.</p>
+      </div>
+      <div>
+        <p style="margin:0 0 4px;font-weight:800">En échange, on prend en charge :</p>
+        <ul>
+          <li>La communication et la mise en visibilité de tes ateliers</li>
+          <li>La prise de réservation en ligne</li>
+          <li>Le paiement sécurisé des participants</li>
+          <li>L'organisation logistique (créneaux, rappels, annulations)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <h2 class="section-title">Pourquoi rejoindre la plateforme</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="icon">💶</div>
+        <h3>Un revenu complémentaire</h3>
+        <p>Valorise les moments où ton local ou ton équipe est disponible mais inactif.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📣</div>
+        <h3>Zéro effort marketing</h3>
+        <p>On met en avant ton offre auprès de particuliers déjà intéressés par ton domaine.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🗓️</div>
+        <h3>Tu gardes le contrôle</h3>
+        <p>Tu choisis tes créneaux, ton nombre de places et tes tarifs. Rien n'est imposé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="inscription">
+  <div class="container">
+    <h2 class="section-title">Formulaire d'inscription</h2>
+    <p class="section-sub">Renseigne ton activité, tes créneaux et ton offre — on te recontacte pour la mise en ligne.</p>
+
+    <form class="signup" onsubmit="event.preventDefault(); alert('Merci ! Votre demande d\'inscription a bien été prise en compte (démo — formulaire non connecté).');">
+
+      <div class="form-row">
+        <div class="field">
+          <label>Nom de l'activité / de l'entreprise</label>
+          <input type="text" placeholder="Ex. Atelier des Saveurs" required>
+        </div>
+        <div class="field">
+          <label>Métier / secteur</label>
+          <input type="text" placeholder="Ex. Cuisine, fleuriste, œnologie..." required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label>E-mail de contact</label>
+          <input type="email" placeholder="vous@exemple.com" required>
+        </div>
+        <div class="field">
+          <label>Téléphone</label>
+          <input type="tel" placeholder="06 12 34 56 78">
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Ville / lieu où se déroulent les ateliers</label>
+        <input type="text" placeholder="Ex. Rennes, en boutique">
+      </div>
+
+      <div class="field">
+        <label>Heures creuses disponibles <span class="hint">— coche les créneaux où tu peux accueillir un atelier</span></label>
+        <div class="checkbox-grid">
+          <label><input type="checkbox"><span>Lundi matin</span></label>
+          <label><input type="checkbox"><span>Lundi après-midi</span></label>
+          <label><input type="checkbox"><span>Mardi matin</span></label>
+          <label><input type="checkbox"><span>Mardi après-midi</span></label>
+          <label><input type="checkbox"><span>Mercredi matin</span></label>
+          <label><input type="checkbox"><span>Mercredi après-midi</span></label>
+          <label><input type="checkbox"><span>Jeudi matin</span></label>
+          <label><input type="checkbox"><span>Jeudi après-midi</span></label>
+          <label><input type="checkbox"><span>Vendredi soir</span></label>
+          <label><input type="checkbox"><span>Samedi</span></label>
+          <label><input type="checkbox"><span>Dimanche</span></label>
+          <label><input type="checkbox"><span>Autre</span></label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label>Personnel disponible pour animer <span class="hint">— nombre de personnes</span></label>
+          <input type="number" min="1" placeholder="Ex. 1">
+        </div>
+        <div class="field">
+          <label>Nombre de participants max par atelier</label>
+          <input type="number" min="1" placeholder="Ex. 8">
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Ce que tu proposes <span class="hint">— décris ton ou tes ateliers en fonction de ton activité</span></label>
+        <textarea placeholder="Ex. Cours de cuisine italienne pour 6 personnes, dégustation incluse, 2h30..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label>Ton tarif souhaité par cours <span class="hint">— avant commission</span></label>
+          <input type="number" min="0" step="0.5" placeholder="Ex. 60 €">
+        </div>
+        <div class="field">
+          <label>Durée moyenne de l'atelier</label>
+          <input type="text" placeholder="Ex. 2h">
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Ce que tu apportes <span class="hint">— matériel, ingrédients, matière première...</span></label>
+        <textarea placeholder="Ex. Tout le matériel et les ingrédients sont fournis, le participant repart avec sa création."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-wide">Envoyer ma demande d'inscription</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="logo">tu testes pas, <span>tu sais pas</span></div>
+    <p>Ateliers & expériences avec des professionnels près de chez vous.</p>
+    <p>&copy; 2026 Tu testes pas, tu sais pas. Tous droits réservés.</p>
+  </div>
+</footer>
+
+</body>
+</html>
